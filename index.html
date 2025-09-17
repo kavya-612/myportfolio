@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(13, 13, 45);
+}
+html {
+    scroll-padding-top: 45px; /* match or slightly exceed navbar height */
+}
+.navbar {
+     display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(2, 2, 29);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 10px 20px;
+        z-index: 1000; 
+}
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 530px;
+    
+    margin-top: 70px; 
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.element {
+    margin: 20px;
+    font-size: 18px;
+    color: aliceblue;
+}
+
+.element1 {
+    margin: 20px;
+    font-size: 26px;
+    color: aliceblue;
+    margin-left: 80px;
+}
+
+
+.glow-ring {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    padding: 6px;
+    background: conic-gradient(from 0deg,
+            #00f0ff,
+            #ff00ff,
+            #ffcc00,
+            #00f0ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-right: 120px;
+    box-shadow:
+        0 0 30px rgba(0, 255, 255, 0.6),
+        0 0 60px rgba(0, 255, 255, 0.4),
+        0 0 90px rgba(0, 255, 255, 0.2),
+        0 0 100px rgba(0, 255, 255, 0.2);
+}
+
+.glow-ring img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #111
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.home-content {
+    animation-name: greet;
+    animation-duration: 1s;
+    margin-top: 60px;
+    margin-left: 200px;
+}
+@keyframes greet{
+     0%  { left:0px; top:0px;}
+    100%  { left:200px; top:0px;}
+}
+.home-sci a {
+    color: aqua;
+    text-decoration: none;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 40px;
+    width: 40px;
+    border: 3px solid aqua;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.home-sci {
+    margin-top: 50px;
+}
+
+.home-sci a:hover {
+    background-color: #00f0ff;
+    color: #111;
+    box-shadow: 0 0 30px aqua;
+}
+
+.button {
+    margin-top: 30px;
+    width: 150px;
+    padding-left: 28px;
+    
+}
+
+.btn-box {
+    background-color: #00f0ff;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+
+.btn-box:hover {
+    box-shadow: 0 0 90px cyan,
+        0 0 60px cyan,
+        0 0 30px cyan,
+        0 0 10px cyan;
+}
+
+.icons a {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.icons a:hover {
+    color:black;
+    background-color: #00f0ff;
+   
+    border-radius: 20px;
+    box-shadow: 0 0 90px cyan ,
+        0 0 60px cyan,
+        0 0 30px cyan,
+        0 0 30px cyan ;
+}
+
+.text {
+    color: #00f0ff;
+    font-weight: 100px;
+    font-size: 24px; 
+}
+/* Base styles - applies to all screen sizes */
+
+/* Hide nav links in phone size, show menu icon */
+#About-1{
+   height: 400px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 300px;
+    line-height: 1.5;
+    
+}
+.matter{
+    flex: 1;
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 100px;
+    
+} 
+.matter h1{
+    font-size: 35px;
+    text-align: left;
+    margin: 0;
+}
+.matter h3{
+    font-size: 23px;
+    text-align: left;
+    margin: 0;
+}
+.glow-ring1 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 100px;
+    margin-left: 50px;
+    
+    background: conic-gradient(from 0deg,
+            #00f0ff,
+            #ff00ff,
+            #ffcc00,
+            #00f0ff);
+    box-shadow:
+        0 0 30px rgba(0, 255, 255, 0.6),
+        0 0 60px rgba(0, 255, 255, 0.4),
+        0 0 90px rgba(0, 255, 255, 0.2),
+        0 0 100px rgba(0, 255, 255, 0.2);
+}
+
+.glow-ring1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #111
+    
+}
+.myskills h1{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 40px;
+    
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    margin-top: 50pxpx;
+}
+.data{
+    margin-left: 70px;
+    margin-top: 75px;
+}
+.technical h2{
+    color: white;
+    margin-left: 200px;
+    text-decoration: underline;
+}
+.professional h2{
+    color: white;
+    text-decoration: underline;
+}
+.html i{
+    color: red;
+}
+.css i{
+    color:blue;
+}
+.js i{
+    color: greenyellow;
+}
+.python i{
+    color: rgb(215, 11, 215);
+}
+.technical h3{
+    color: white;
+}
+.technical label{
+    color: white;
+    line-height: 2;
+}
+
+.technical progress{
+           height: 0.5cm;
+            width: 350px;
+            accent-color:#00f0ff;
+        }
+#progresstext{
+    color: white;
+}
+.professional progress{
+    height: 0.5cm;
+            width: 350px;
+            accent-color:#00f0ff;
+        }
+.professional label{
+    color: white;
+    font-size: 18px;
+    line-height: 2.5;
+}
+.data1{
+    margin-top: 70px;    
+}
+#progresstext1{
+    color: white;
+}#contact{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.matter1 h1{
+    color: white;
+    text-align: left;
+    font-size: 35px;
+    text-align: center;
+}
+.matter1 p{
+    color: white;
+    width: 550px;
+    text-align: left;
+    line-height: 1.5;
+
+}
+.matter1{
+    line-height: 1.5;
+    margin-left: 60px;
+    margin-top: 120px;
+}
+.mail i{
+    color: aqua;
+}
+.mail a{
+    color: aqua;
+    text-decoration: none;
+}
+.phone i{
+    color: aqua;
+}
+.phone a{
+    color: aqua;
+    text-decoration: none;
+}
+.my-input{
+    background-color: white;
+    margin-top: 5px;  
+    border-radius: 15px;
+    border-style: none;
+    line-height: 1.5;
+      
+}
+#my-input1{
+    padding:15px ;
+    width: 500px;
+}
+#my-input2{
+    padding:15px ;
+    width: 500px;
+}
+#my-input3{
+    padding:15px ;
+    width: 500px;
+}
+#my-input4{
+    padding:15px ;
+    width: 500px;
+}
+.form{
+    margin-right: 30px;
+    margin-top: 120px;
+    margin-bottom: 150px;
+}
+.my-input:focus{
+   border-style: none;
+    outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fade in and slide up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delay animation for each element */
+.home-content h3,
+.home-content p,
+.home-content .home-sci,
+.home-content .button {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.home-content h3:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.home-content h3:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.home-content h3:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.home-content p {
+    animation-delay: 0.8s;
+}
+
+.home-sci {
+    animation-delay: 1s;
+}
+
+.button {
+    animation-delay: 1.2s;
+}
+
+/* Hover animation for social icons */
+.home-sci a {
+    color: aliceblue;
+    font-size: 22px;
+    margin-right: 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.home-sci a:hover {
+    transform: scale(1.2) rotate(5deg);
+    color: cyan;
+}
+
+/* Button hover glow */
+.btn-box {
+    display: inline-block;
+    padding: 10px 20px;
+    background: cyan;
+    color: black;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 20px cyan, 0 0 40px cyan;
+    transform: translateY(-3px);
+}
+
+</style>
+
+
+</head>
+
+<body>
+    <section id="Main-Home">
+
+        <div class="navbar">
+            <div class="icons">
+                <p class="element1"><b>Portfolio.</b></p>
+            </div>
+            <div class="menu-icon" id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="icons" id="icons">
+                <a href="#Main-Home">
+                    <p class="element"><b>Home</b></p>
+                </a>
+                <a href="#About-1">
+                    <p class="element"><b>About</b></p>
+                </a>
+                
+                <a href="#Skills">
+                    <p class="element"><b>Skills</b></p>
+                </a>
+                <a href="#">
+                    <p class="element"><b>Project</b></p>
+                </a>
+                <a href="#contact">
+                    <p class="element"><b>Contact</b></p>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="home">
+
+            <div class="home-content">
+                <div>
+                    <h3 style="color: aliceblue; font-size: 24px; ">Hello, It's Me</h3>
+                    <h3 style="color: aliceblue; font-size: 30px;">Kavya Darapureddy</h3>
+                    <h3 style="color: aliceblue;">And I'm a <span class="text"></span> </h3>
+                    <p style="color: aliceblue; font-size: 18px; ">I'm a passionate front-end developer with a love for
+                        creating <br>
+                        interactive and visually appealing user experiences. </p>
+                </div>
+                <div class="home-sci">
+                    <a href="a"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="a"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="a"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="a"><i class="fa-brands fa-linkedin-in"></i></a><br><br>
+
+                </div>
+                <div class="button">
+                    <a href="#" class="btn-box">More About Me</a>
+                </div>
+            </div>
+
+
+            <div class="glow-ring">
+                <img src="kavya.jpeg" alt="profile"> 
+            </div>
+        </div>
+    </section>
+    <section id="About-1">
+        
+            <div class="glow-ring1">
+                <img src="kavya.jpeg" alt="profile">
+            </div>
+            <div class="matter">
+                <h1>About <span style="color: aqua;">Me</span></h1>
+                <h3>Web developer!</h3>
+                <p>I am an aspiring web developer with a strong interest in creating responsive, visually appealing, and
+                    functional websites. I possess a solid foundation in HTML, CSS, and JavaScript, and I am dedicated
+                    to expanding my skills to become a proficient full-stack developer. I enjoy turning ideas into
+                    interactive digital experiences, combining clean code with creative design. My goal is to master
+                    both front-end and back-end technologies, work on real-world projects, and contribute to building
+                    innovative solutions that make a positive impact.</p>
+                <div class="button">
+                    <a href="#" class="btn-box">More About Me</a>
+                </div>
+            </div>
+
+       
+    </section>
+    
+
+    
+    <section id= "Skills">
+        <div class="myskills">
+            <h1 style="color: white;">My <span style="color: aqua;">Skills</span></h1>
+        </div>
+        <div class="skills">
+
+            <div class="technical">
+                <h2>Technical Skills</h2>
+                <div class="data">
+                    <div class="html">
+                        <i class="fa-brands fa-html5"></i>
+                        <label>HTML</label><br>
+                        <progress value=90 max="100" min="0" id="myprogress"></progress>
+                        <span id="progresstext"></span> <br><br>
+                    </div>
+                    <div class="css">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <label>CSS</label><br>
+                        <progress value=80 max="100" min="0" id="myprogress"></progress>
+                        <span id="progresstext"></span><br><br>
+                    </div>
+                    <div class="js">
+                        <i class="fa-brands fa-js"></i>
+                        <label>JavaScript</label><br>
+                        <progress value=70 max="100" min="0" id="myprogress"></progress>
+                        <span id="progresstext"></span><br><br>
+                    </div>
+                    <div class="python">
+                        <i class="fa-brands fa-python"></i>
+                        <label>Python</label><br>
+                        <progress value=50 max="100" min="0" id="myprogress"></progress>
+                        <span id="progresstext"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="professional">
+                <h2>Professional Skills</h2>
+                <div class="data1">
+                    <div class="creativity">
+                        <label>Creativity</label><br>
+                        <progress value=90 max="100" min="0" class="prof"></progress>
+                        <span id="progresstext1"></span>
+                    </div>
+                    <div class="creativity">
+                        <label>Communication</label><br>
+                        <progress value=65 max="100" min="0" class="prof"></progress>
+                        <span id="progresstext1"></span>
+                    </div>
+                    <div class="Problem-solving">
+                        <label>Problem-Solving</label><br>
+                        <progress value=75 max="100" min="0" class="prof"></progress>
+                        <span id="progresstext1"></span>
+                    </div>
+                    <div class="TeamWork">
+                        <label>TeamWork</label><br>
+                        <progress value=85 max="100" min="0" class="prof"></progress>
+                        <span id="progresstext1"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="matter1">
+            <h1>Contact <span style="color: aqua;">Me</span></h1>
+            <h3 style="color: white;">Let's work together</h3>
+            <p>I’m always open to exciting opportunities, collaborations, or just a friendly tech chat.Whether you have
+                a project in mind, a question, or simply want to say hello, feel free to drop me a message. I’ll get
+                back to you as soon as possible!</p>
+            <div class="mail">
+                <i class="fa-solid fa-paper-plane"></i>
+                <a href="mailto:kavyadurgachandanadarapureddy@gmail.com">kavyadurgachandanadarapureddy@gmail.com</a>
+
+            </div>
+            <div class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+91 9876543210">+91 9876543210</a>
+            </div>
+            <div class="home-sci">
+                    <a href="a"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="a"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="a"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="a"><i class="fa-brands fa-linkedin-in"></i></a><br><br>
+
+                </div>
+        </div>
+
+
+        <div class="form">
+            <form>
+                <input type="text" placeholder="Enter your Name" class="my-input" id='my-input1'><br>
+                <input type="text" placeholder="Enter your Mail" class="my-input" id='my-input2'><br>
+                <input type="text" placeholder="Enter your Subject" class="my-input" id='my-input3'><br>
+                <textarea class="my-input" id='my-input3' placeholder="Enter your message" rows="5"></textarea>
+            </form>
+
+        </div>
+    </section>
+
+</body>
+
+<script>
+    var typed = new Typed(".text", {
+        strings: ["Frontend Developer", "UI/UX Designer", "Web Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+    });
+</script>
+<script>
+    const percentage = document.querySelectorAll("#myprogress")
+    const percentagetext = document.querySelectorAll("#progresstext")
+
+    percentage.forEach((progress, index) => {
+        let percent = (progress.value / progress.max) * 100;
+        percentagetext[index].textContent = percent.toFixed(0) + "%";
+    });
+
+
+
+</script>
+<script>
+    const percentage1 = document.querySelectorAll(".prof")
+    const percentagetext1 = document.querySelectorAll("#progresstext1")
+
+    percentage1.forEach((progress, index) => {
+        let percent = (progress.value / progress.max) * 100;
+        percentagetext1[index].textContent = percent.toFixed(0) + "%";
+    });
+
+
+
+</script>
+
+</html>
